@@ -778,16 +778,22 @@ text-transform: uppercase;
 * 06.START OUR SERVICE DESIGN
 * ----------------------------------------------------------------------------------------
 */
+.row.equal {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
 .our_service {
     background: #f7f7f7;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .single_service {
+    height: 100%;
     background: #fff none repeat scroll 0 0;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
-    padding: 40px 30px;
+    padding: 40px 30px 10px;
     -webkit-transition: all 0.2s ease 0s;
             transition: all 0.2s ease 0s;
 }
