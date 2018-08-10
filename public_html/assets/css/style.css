@@ -835,7 +835,10 @@ text-transform: uppercase;
 * 07.START OUR PROCESS DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.single_process { padding: 60px 30px }
+.single_process {
+    height: 100%;
+    padding: 60px 30px;
+}
 .single_process h4 span { margin-right: 17px }
 .single_process h4 { color: #fff }
 .single_process h4 span {
