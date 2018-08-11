@@ -208,6 +208,10 @@ fieldset {
     color: #00bcd4 !important;
     background-color: transparent;
 }
+.navbar-header {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .navbar-brand { padding: 0px }
 .navbar-brand img { width: 150px }
 .menu-top { background: none }
