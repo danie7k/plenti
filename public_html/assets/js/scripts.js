@@ -5,7 +5,15 @@ Version      : 1.0
 */
 (function($) {
 	"use strict";
-	
+
+    function toggleLogo() {
+        if ($('.menu-top').css('background-color') == 'rgb(255, 255, 255)') {
+            $('#logo').attr('src', 'assets/img/logo.png');
+        } else  {
+            $('#logo').attr('src', 'assets/img/logo-white.png');
+        }
+    }
+
 	jQuery(document).ready(function(){
 	
 		/*START PRELOADER JS*/
@@ -24,6 +32,8 @@ Version      : 1.0
 				e.preventDefault();
 			});
 
+			toggleLogo();
+
 			$(window).scroll(function() {
 			  if ($(this).scrollTop() > 100) {
 				$('.menu-top').addClass('menu-shrink');
@@ -31,11 +41,7 @@ Version      : 1.0
 				$('.menu-top').removeClass('menu-shrink');
 			  }
 
-			  if ($('.menu-top').css('background-color') == 'rgb(255, 255, 255)') {
-				$('#logo').attr('src', 'assets/img/logo.png');
-			  } else  {
-			  	$('#logo').attr('src', 'assets/img/logo-white.png');
-			  }
+			  toggleLogo();
 			});
 			
 			$(document).on('click','.navbar-collapse.in',function(e) {

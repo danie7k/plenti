@@ -210,7 +210,7 @@ fieldset {
 }
 .navbar-header {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .navbar-brand { padding: 0px }
 .navbar-brand img { width: 150px }
@@ -261,7 +261,12 @@ fieldset {
 * 03.START HOME DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.slider { height: 650px }
+.slider {
+    height: 650px;
+    background-image: url(../img/bg/home-bg.jpg);
+    background-size:cover;
+    background-position: center top;
+}
 .slider_overlay {
     background: rgba(0,0,0,0.4) none repeat scroll 0 0;
     height: 100%;
@@ -275,19 +280,30 @@ fieldset {
     text-transform: uppercase;
     margin: 0;
 }
-@media only screen and (max-width:768px) { 
+@media only screen and (max-width:768px) {
+    .slider {
+        background-image: url(../img/bg/home-bg-square.jpg);
+    }
     .hero-text h2 {
         font-size: 40px;
         line-height: 54px;
     }
 }
-@media only screen and (max-width:480px) { 
+@media only screen and (max-width:480px) {
+    .slider {
+        background-image: url(../img/bg/home-bg-square.jpg);
+        background-position: center 90px;
+    }
     .hero-text h2 {
         font-size: 34px;
         line-height: 45px;
     }
 }
-@media only screen and (max-width:360px) { 
+@media only screen and (max-width:360px) {
+    .slider {
+        background-image: url(../img/bg/home-bg-square.jpg);
+        background-position: center 90px;
+    }
     .hero-text h2 {
         font-size: 26px;
         line-height: 36px;
