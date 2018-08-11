@@ -30,6 +30,12 @@ Version      : 1.0
 			  } else {
 				$('.menu-top').removeClass('menu-shrink');
 			  }
+
+			  if ($('.menu-top').css('background-color') == 'rgb(255, 255, 255)') {
+				$('#logo').attr('src', 'assets/img/logo.png');
+			  } else  {
+			  	$('#logo').attr('src', 'assets/img/logo-white.png');
+			  }
 			});
 			
 			$(document).on('click','.navbar-collapse.in',function(e) {
