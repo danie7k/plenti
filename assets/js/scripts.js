@@ -43,6 +43,12 @@ Version      : 1.0
 
 			  toggleLogo();
 			});
+		
+		        $(window).on('orientationchange', function(e) {
+                	    window.setTimeout(function() {
+                    		toggleLogo();
+                	    }, 300);
+            		});
 			
 			$(document).on('click','.navbar-collapse.in',function(e) {
 			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
